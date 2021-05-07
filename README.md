@@ -17,3 +17,5 @@ docker build . -t my-apache2
 ```shell
 docker run -it --env-file <my-env-file> -p 8080:80 my-apache2
 ```
+
+In a browser, navigate to "http://localhost:8080"
