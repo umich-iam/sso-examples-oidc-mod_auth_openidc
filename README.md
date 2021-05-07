@@ -4,7 +4,12 @@ Example implementation of mod_auth_openidc
 
 
 # Setup
-OIDC Credentials must be available in env
+OIDC Credentials must be available in env    
+OIDC_CLIENT_ID=    
+OIDC_CLIENT_SECRET=    
+OIDC_PASSPHRASE=
+
+
 
 # Build
 
