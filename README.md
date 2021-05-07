@@ -14,4 +14,6 @@ docker build . -t my-apache2
 
 
 # Run
+```shell
 docker run -it --env-file <my-env-file> -p 8080:80 my-apache2
+```
