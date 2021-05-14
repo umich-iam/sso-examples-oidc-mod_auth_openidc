@@ -3,8 +3,10 @@
 Example implementation of mod_auth_openidc
 
 
-# Requirements
+# Prerequisites
 docker and docker-compose installed locally
+
+OIDC credentials can be obtained from IAM by submitting a [Shibboleth Configuration Request Form](https://its.umich.edu/accounts-access/shibboleth/configuration-request-form)
 
 
 # Setup
