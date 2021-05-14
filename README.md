@@ -16,6 +16,8 @@ http://localhost:8080/secure/oidc/callback/
 More information can be found at:
 https://documentation.its.umich.edu/node/767
 
+Note: A single set of credentials could have multiple allowed redirect URLs, but it is recommended to use separate credentials for each server, such as dev, qa, and production.
+
 # Setup
 OIDC Credentials must be put in a `.env` file, with the format:   
 
