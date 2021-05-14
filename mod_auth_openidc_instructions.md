@@ -1,4 +1,4 @@
-**OIDC_instructions.md**
+**mod_auth_openidc_instructions**
 
 Step by step instructions for setting up OIDC authentication on an Apache web server.
 
