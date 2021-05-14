@@ -5,13 +5,19 @@ Step by step instructions for setting up OIDC authentication on an Apache web se
 Obtain OIDC credentials from IAM by submitting a [Shibboleth Configuration Request Form](https://its.umich.edu/accounts-access/shibboleth/configuration-request-form)
 
 Install the packages:
+```
 ca-certificates
 libapache2-mod-auth-openidc
+```
+
 
 Create a link:
+```
 ln -s /usr/lib/apache2/modules/mod_auth_openidc.so /usr/local/apache2/modules/mod_auth_openidc.so
+```
 
 In the Apache configuration, add:
+```
 LoadModule auth_openidc_module modules/mod_auth_openidc.so
 # For further documentation see https://github.com/zmartzone/mod_auth_openidc
 OIDCProviderMetadataURL ${OIDC_PROVIDER_URL}
@@ -27,6 +33,8 @@ OIDCCryptoPassphrase "${OIDC_PASSPHRASE}"
    Require valid-user
    LogLevel debug
 </Location>
+```
+
 
 
 The passphrase is used for session state encryption purposes between your application and your user.  It is not used by the OIDC provider, so it is not on the credentials form.
