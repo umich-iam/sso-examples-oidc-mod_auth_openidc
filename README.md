@@ -3,6 +3,10 @@
 Example implementation of mod_auth_openidc
 
 
+# Requirements
+docker and docker-compose installed locally
+
+
 # Setup
 OIDC Credentials must be available in a `.env` file, with the format:   
 
