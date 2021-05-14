@@ -11,6 +11,7 @@ OIDC Credentials must be available in ./env
 OIDC_CLIENT_ID=<client_id>
 OIDC_CLIENT_SECRET=<client_secret>
 OIDC_PASSPHRASE=<passphrase>
+OIDC_REDIRECT_URI=http://localhost:8080/secure/oidc/callback/
 ```
 
 
