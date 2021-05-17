@@ -19,7 +19,9 @@ https://documentation.its.umich.edu/node/767
 Note: A single set of credentials could have multiple allowed redirect URLs, but it is recommended to use separate credentials for each server, such as dev, qa, and production.
 
 # Setup
-OIDC Credentials must be put in a `.env` file, with the format:   
+git clone this repository and change to the directory
+
+Put your OIDC Credentials in a file called `.env`, with the format:   
 
 ```shell
 OIDC_CLIENT_ID=<client_id>
@@ -28,7 +30,7 @@ OIDC_PASSPHRASE=<passphrase>
 OIDC_REDIRECT_URI=http://localhost:8080/secure/oidc/callback/
 OIDC_PROVIDER_URL=https://shib-idp-staging.dsc.umich.edu/.well-known/openid-configuration
 ```
-The passphrase can be anything, it is only used locally for session state encryption purposes.
+The passphrase is used for session state encryption purposes between your application and your user.
 
 A production site would use the provider URL:
 OIDC_PROVIDER_URL=https://shibboleth.umich.edu/.well-known/openid-configuration
