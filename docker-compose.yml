@@ -9,5 +9,6 @@ services:
     volumes:
       - ./apache2/htdocs:/usr/local/apache2/htdocs
       - ./apache2/conf/httpd.conf:/usr/local/apache2/conf/httpd.conf
+      - ./apache2/conf/conf.d:/usr/local/apache2/conf/conf.d
     ports:
       - 8080:80
