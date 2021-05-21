@@ -7,8 +7,9 @@ services:
     env_file:
       - .env
     volumes:
-      - ./apache2/htdocs:/usr/local/apache2/htdocs
-      - ./apache2/conf/httpd.conf:/usr/local/apache2/conf/httpd.conf
-      - ./apache2/conf/conf.d:/usr/local/apache2/conf/conf.d
+      - ./httpd/html:/var/www/html
+      - ./httpd/conf/httpd.conf:/etc/httpd/conf/httpd.conf
+      - ./httpd/conf.d/php7.3.conf:/etc/httpd/conf.d/php7.3.conf
+      - ./httpd/conf.d/mod_auth_openidc.conf:/etc/httpd/conf.d/mod_auth_openidc.conf
     ports:
       - 8080:80
