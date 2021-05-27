@@ -1,7 +1,6 @@
 # mod_auth_openidc
 
-Example implementation of mod_auth_openidc
-
+Example implementation of mod_auth_openidc. This repo demonstrates installing and configuring mod_auth_openidc in a `httpd:2.4` container.
 
 # Prerequisites
 docker and docker-compose installed locally
