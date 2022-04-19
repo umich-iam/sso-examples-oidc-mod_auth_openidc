@@ -1,6 +1,6 @@
 # mod_auth_openidc
 
-Example implementation of mod_auth_openidc. This repo demonstrates installing and configuring mod_auth_openidc in a `httpd:2.4` container. For RHEL, see the `rhel` branch.
+Example implementation of [mod_auth_openidc](https://github.com/zmartzone/mod_auth_openidc). This repo demonstrates installing and configuring mod_auth_openidc in a `httpd:2.4` container. For RHEL, see the `rhel` branch.
 
 # Prerequisites
 docker and docker-compose installed locally
