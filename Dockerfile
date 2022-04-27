@@ -7,4 +7,4 @@ RUN apt-get update && apt-get install -y \
   libapache2-mod-auth-openidc \
   libapache2-mod-php \
   && ln -s /usr/lib/apache2/modules/mod_auth_openidc.so /usr/local/apache2/modules/mod_auth_openidc.so \
-  && ln -s /usr/lib/apache2/modules/libphp7.3.so /usr/local/apache2/modules/libphp7.3.so
+  && ln -s /usr/lib/apache2/modules/libphp7.4.so /usr/local/apache2/modules/libphp7.4.so
